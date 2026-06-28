@@ -1,7 +1,17 @@
+import Button from "@/components/ui/button";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <h1 className="text-5xl font-bold">Nelson Homes</h1>
+    <main className="min-h-screen flex items-center justify-center gap-4">
+      <Button>Book Consultation</Button>
+
+      <Button variant="outline">
+        View Projects
+      </Button>
+
+      <Button variant="secondary">
+        Learn More
+      </Button>
     </main>
   );
 }
