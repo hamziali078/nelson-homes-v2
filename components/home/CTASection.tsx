@@ -30,7 +30,10 @@ export default function CTASection() {
           </p>
 
           <div className="mt-12 flex flex-col justify-center gap-5 sm:flex-row">
-            <Button href="/contact">
+            <Button
+              href="/contact"
+              className="h-14 bg-white px-8 text-[#4F6F52] transition-all duration-300 hover:bg-[#F3F3F3] hover:text-[#3F5A42] hover:-translate-y-1 hover:shadow-xl"
+            >
               Book Free Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

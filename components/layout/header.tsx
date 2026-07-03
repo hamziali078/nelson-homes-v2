@@ -11,7 +11,7 @@ import Button from "@/components/ui/button";
 const navigation = [
   { name: "Home", href: "/#home" },
   { name: "Projects", href: "/#projects" },
-  { name: "Communities", href: "/#communities" },
+  { name: "Why Nelson Homes", href: "/#communities" },
   { name: "Buying Process", href: "/#buying-process" },
   { name: "About", href: "/#about" },
   { name: "Contact", href: "/contact" },
@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-neutral-200/70 bg-white/80 backdrop-blur-xl">
-      <Container className="flex h-20 items-center justify-between">
+      <Container className="flex h-18 items-center justify-between sm:h-20 lg:h-20 xl:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
@@ -30,18 +30,18 @@ export default function Header() {
             alt="Nelson Homes"
             width={130}
             height={42}
-            className="h-10 w-auto object-contain"
+            className="h-9 w-auto object-contain sm:h-10 lg:h-10 xl:h-10"
             priority
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-9 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex xl:gap-9">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-[15px] font-medium text-neutral-700 transition-colors duration-300 hover:text-[#4F6F52]"
+              className="text-[14px] font-medium text-neutral-700 transition-colors duration-300 hover:text-[#4F6F52] xl:text-[15px]"
             >
               {item.name}
             </Link>
@@ -50,13 +50,16 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:block">
-          <Button href="/contact">
+          <Button
+            href="/contact"
+            className="h-11 px-6 lg:text-sm xl:h-12 xl:px-8 xl:text-base"
+          >
             Book Consultation
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
 
-        {/* Mobile Button */}
+        {/* Mobile Menu Button */}
         <button
           onClick={() => setOpen(!open)}
           className="rounded-xl border border-neutral-200 p-2 lg:hidden"

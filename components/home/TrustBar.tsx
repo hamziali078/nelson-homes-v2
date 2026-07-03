@@ -1,32 +1,32 @@
 import {
-  ShieldCheck,
-  BadgeCheck,
-  Home,
-  Clock3,
+  MapPinned,
+  Trees,
+  Building2,
+  TrendingUp,
 } from "lucide-react";
 
 import Container from "@/components/ui/container";
 
 const features = [
   {
-    icon: ShieldCheck,
-    title: "50% Ownership",
-    text: "Secure legal ownership before full payment.",
+    icon: MapPinned,
+    title: "Prime Locations",
+    text: "Best locations with easy city access.",
   },
   {
-    icon: Home,
-    title: "88% Possession",
-    text: "Move into your home before final recovery.",
+    icon: Trees,
+    title: "Modern Lifestyle",
+    text: "Green spaces and premium family living.",
   },
   {
-    icon: BadgeCheck,
-    title: "Lifetime Warranty",
-    text: "Lifetime structural warranty on every home.",
+    icon: Building2,
+    title: "Premium Communities",
+    text: "Luxury neighborhoods built for comfort.",
   },
   {
-    icon: Clock3,
-    title: "One Year Maintenance",
-    text: "Free maintenance after possession.",
+    icon: TrendingUp,
+    title: "High Investment Growth",
+    text: "Strong returns with rising property values.",
   },
 ];
 
